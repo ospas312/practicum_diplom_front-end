@@ -1,0 +1,13 @@
+.menu__list-black:first-child{
+    border: none;
+}
+
+.menu__list-black:nth-child(2) {
+    border-bottom: 2px solid #1A1B22;
+    line-height: 4.9;
+}
+@media screen and (max-width: 768px) {
+    .menu__list-black:nth-child(2) {
+        line-height: 3.9;
+    }
+}

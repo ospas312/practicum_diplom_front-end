@@ -1,0 +1,30 @@
+@import url(./__circle/preloader__circle.css);
+@import url(./__subtitle/preloader__subtitle.css);
+
+/*body {
+	margin: 0;
+	min-height: 100vh;
+	background-color: #333;
+	
+	overflow: hidden;
+}
+*/
+.preloader {
+	position: relative;
+	background: #F5F6F7;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	text-align: center;
+}
+
+@keyframes spin {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@media screen and (max-width: 768px) {
+    .preloader {
+		padding-top: 45px;
+		padding-bottom: 45px;
+	}
+}

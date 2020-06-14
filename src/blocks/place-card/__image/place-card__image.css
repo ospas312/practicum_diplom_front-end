@@ -1,0 +1,38 @@
+.place-card__image {
+  background-image: url("../../../images/image_07.png");
+  width: 100%;
+  height: 272px;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  padding: 24px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .place-card__image{
+    padding: 8px;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .place-card__image{
+    padding: 16px;
+    height: 196px;
+  }
+}
+/*.place-card__image::after {
+  content: '';
+  display: block;
+  width: 400px;
+  height: 272px;
+  background-color: rgba(0, 0, 0, .3);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}*/

@@ -1,0 +1,15 @@
+.menu__list{
+    display: flex;
+    flex-direction: row;
+    list-style:none;
+    align-items: center;
+    margin: 0;
+    /*color: #FFF;*/
+}
+@media screen and (max-width: 580px) {
+    .menu__list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0;
+    }
+}

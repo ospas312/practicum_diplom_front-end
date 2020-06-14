@@ -1,0 +1,19 @@
+.about__text{
+    width: 46%;
+}
+
+@media screen and (max-width: 768px) {
+    .about__text{
+        width: 57%;
+    }
+  }
+@media screen and (max-width: 580px) {
+    .about__text{
+        width: 85%;
+    }
+}
+@media screen and (max-width: 320px) {
+    .about__text{
+        width: 100%;
+    }
+}
