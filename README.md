@@ -2,17 +2,15 @@
 
 
 
-# Дипломный проект, фронтенд.
+# Дипломный проект, фронтенд верстка.
 
-*practicum_diplom_front-end*
+*practicum_diplom_front-end_webpack*
 
-    Основная задача подготовить фронтенд и задеплоить его на сервер.
+    Основная задача подготовить webpack и верстку проекта.
     
 
+[ссылка на проект](https://github.com/ospas312/practicum_diplom_front-end/)
 
-[ссылка на проект](https://github.com/ospas312/practicum_diplom_back-end)
-ip проекта - 84.201.134.240
-домен проекта - www.perpetuum.space
-API - api.perpetuum.space
+[gh-pages](https://ospas312.github.io/practicum_diplom_front-end/)
 
-*Для запуска локально, скачайте проект, распакуйте в необходимую директорию, установите командой 'npm install' и запустите командой 'npm run start'.*
+*Для запуска локально, скачайте проект, распакуйте в необходимую директорию, установите командой 'npm install' и запустите командой 'npm run dev'.*
