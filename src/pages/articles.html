@@ -18,7 +18,7 @@
             <a class="menu__icon-main" target="_blank" href="/" title="Главная">Главная</a>
           </li>
           <li class="menu__list-link menu__list-black">
-            <a class="menu__icon-articles" target="_blank" href="./articles/articles.html" title="Сохранённые статьи">Сохранённые статьи</a>
+            <a class="menu__icon-articles" target="_blank" href="./articles/" title="Сохранённые статьи">Сохранённые статьи</a>
           </li>
           <li class="menu__list-link menu__list-black">
             <button class="button menu__button menu__button-black">Грета<img src="<%=require('../images/exitb.svg').default%>" alt="exit"></button>
@@ -101,14 +101,14 @@
       <!--<button class="button cards__button">Показать еще</button> пригодится если карточек будет больше -->
     </section>
     <footer class="footer root__section">
-      <p class="footer__subtitle">&#169 2020 Supersite, Powered by News API</p>
+      <p class="footer__subtitle">&#169; 2020 Supersite, Powered by News API</p>
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__list-link">
               <a class="menu__icon-main" target="_blank" href="/index.html" title="Главная">Главная</a>
             </li>
             <li class="menu__list-link">
-              <a class="menu__icon-facebook" target="_blank" href="facebookUrl" title="Яндекс.Практикум">Яндекс.Практикум</a>
+              <a class="menu__icon-facebook" target="_blank" href="https://praktikum.yandex.ru/" title="Яндекс.Практикум">Яндекс.Практикум</a>
             </li>
             <li class="menu__list-link">
               <a class="menu__icon-github" target="_blank" href="https://github.com/ospas312/" title="GitHub"><img src="<%=require('../images/github.svg').default%>" alt="GitHub"></a>
@@ -119,6 +119,7 @@
           </ul>
         </nav>
     </footer>
+  </div>  
   <script src="<%= htmlWebpackPlugin.files.chunks.articles.entry %>"></script>
 </body>
 </html>

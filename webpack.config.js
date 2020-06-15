@@ -29,11 +29,28 @@ module.exports = {
                             loader: "babel-loader"
                         }
                 },
-                {
+               {
+                    test: /\.(png|jpe?g|gif|ico|svg)$/,
+                    use: [
+                        {
+                            loader: 'file-loader',
+                            options: {
+                                name: 'images/[name].[hash].[ext]',
+                                publicPath: '/',
+                                /*esModule: false*/
+                            }
+                        },
+                      {
+                        loader: 'image-webpack-loader',
+                        options: {}
+                      },
+                    ]
+                },
+               /* {
                     test: /\.(png|jpg|gif|svg)$/,
                     loader: 'file-loader',
                     options: { publicPath: '/'},
-                }, 
+                }, */
                 /*{
                     test: /\.(png|jpg|gif|ico|svg)$/i,
                     use: [
@@ -50,7 +67,7 @@ module.exports = {
                         [
                             /*isDev ? { loader:'style-loader' } : { loader: MiniCssExtractPlugin.loader, options: { publicPath: '../'} },*/
                            {
-                               loader : MiniCssExtractPlugin.loader, options: { publicPath: '../'},
+                               loader : MiniCssExtractPlugin.loader, options: { publicPath: './'},
                            },  
                            'css-loader', 
                             'postcss-loader'
@@ -85,7 +102,7 @@ module.exports = {
                 inject: false,
                 hash: true,
                 template: './src/pages/articles.html',
-                filename: './articles/articles.html',
+                filename: 'articles/index.html',
                 chunks: ['articles'],
             }),
             new WebpackMd5Hash(),

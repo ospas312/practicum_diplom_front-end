@@ -18,3 +18,8 @@
         width: 40%;
     }
 }
+@media screen and (max-width: 600px) {
+    .not-found__subtitle{
+        width: 80%;
+    }
+}

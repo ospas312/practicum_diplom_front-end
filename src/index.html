@@ -12,14 +12,26 @@
   <div class="root">
     <header class="header root__section">
       <h3 class="logo">NewExplorer</h3>
-      <nav class="mobile-menu"></nav>
+      <nav class="menu mobile-menu">
+          <ul class="menu__list mobile-menu__list">
+            <li class="menu__list-link mobile-menu__list-link">
+              <a class="menu__icon-main" target="_blank" href="/" title="Главная">Главная</a>
+            </li>
+            <li class="menu__list-link mobile-menu__list-link">
+              <a class="menu__icon-articles" target="_blank" href="./articles/" title="Сохранённые статьи">Сохранённые статьи</a>
+            </li>
+            <li class="menu__list-link mobile-menu__list-link">
+              <button class="button menu__button">Name_auth<img src="<%=require('./images/exit.svg').default%>" alt="exit"></button>
+            </li>
+          </ul>
+      </nav>
       <nav class="menu header__menu">
         <ul class="menu__list">
           <li class="menu__list-link">
             <a class="menu__icon-main" target="_blank" href="/" title="Главная">Главная</a>
           </li>
           <li class="menu__list-link">
-            <a class="menu__icon-articles" target="_blank" href="./articles/articles.html" title="Сохранённые статьи">Сохранённые статьи</a>
+            <a class="menu__icon-articles" target="_blank" href="./articles/" title="Сохранённые статьи">Сохранённые статьи</a>
           </li>
           <li class="menu__list-link">
             <button class="button menu__button">Name_auth<img src="<%=require('./images/exit.svg').default%>" alt="exit"></button>
@@ -33,14 +45,14 @@
         <p class="subtitle search__subtitle">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
         <form class="search__form" name="search">
           <input type="text" name="search" class="search__input search__input_type_search" placeholder="Введите тему новости" minlength="2" maxlength="30" required>
-          <button type class="button search__button">Искать</button>
+          <button type="button" class="button search__button">Искать</button>
         </form>
       </div>
     </section>
     <section class="preloader preloader__vision root__section">
-      <div class="">
+      <div>
         <i class="preloader__circle"></i>
-        <p class="subtitle preloader__subtitle">Идет поиск новостей...</p>
+        <h4 class="subtitle preloader__subtitle">Идет поиск новостей...</h4>
       </div>
     </section>
     <section class="not-found not-found__vision root__section">
@@ -134,7 +146,7 @@
           <p class="popup__form-subtitle">Пароль</p>
           <input type="password" name="password" id="password" class="popup__input popup__input_type_password" placeholder="Введите пароль" minlength="8" maxlength="30" required>
           <span class="error error-password"></span>
-          <button type class="button popup__button popup__button-signin" disabled>Войти</button>
+          <button type="button" class="button popup__button popup__button-signin" disabled>Войти</button>
         </form>
         <p class="popup__text">или <button class="button popup__button popup__button-text">Зарегистрироваться</button></p>
       </div>
@@ -147,16 +159,16 @@
         <h3 class="popup__title">Регистрация</h3>
         <form class="popup__form popup__form-signup" name="signup">
           <p class="popup__form-subtitle">Email</p>  
-          <input type="email" name="email" id="email" class="popup__input popup__input_type_email" placeholder="Введите почту" minlength="2" maxlength="30" required>
+          <input type="email" name="email"  class="popup__input popup__input_type_email" placeholder="Введите почту" minlength="2" maxlength="30" required>
           <span class="error error-email"></span>
           <p class="popup__form-subtitle">Пароль</p>
-          <input type="password" name="password" id="password" class="popup__input popup__input_type_password" placeholder="Введите пароль" minlength="8" maxlength="30" required>
+          <input type="password" name="password"  class="popup__input popup__input_type_password" placeholder="Введите пароль" minlength="8" maxlength="30" required>
           <span class="error error-password"></span>
           <p class="popup__form-subtitle">Имя</p>
           <input type="text" name="name" id="name" class="popup__input popup__input_type_name" placeholder="Введите свое имя" minlength="2" maxlength="30" required>
           <span class="error error-password"></span>
           <span class="error eroor-form"></span>
-          <button type class="button popup__button popup__button-signup" disabled>Зарегистрироваться</button>
+          <button type="button" class="button popup__button popup__button-signup" disabled>Зарегистрироваться</button>
         </form>
         <p class="popup__text">или <button class="button popup__button popup__button-text">Войти</button></p>
       </div>
@@ -172,14 +184,14 @@
 
 
     <footer class="footer root__section">
-      <p class="footer__subtitle">&#169 2020 Supersite, Powered by News API</p>
+      <p class="footer__subtitle">&#169; 2020 Supersite, Powered by News API</p>
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__list-link">
               <a class="menu__icon-main" target="_blank" href="/" title="Главная">Главная</a>
             </li>
             <li class="menu__list-link">
-              <a class="menu__icon-facebook" target="_blank" href="facebook" title="Яндекс.Практикум">Яндекс.Практикум</a>
+              <a class="menu__icon-facebook" target="_blank" href="https://praktikum.yandex.ru/" title="Яндекс.Практикум">Яндекс.Практикум</a>
             </li>
             <li class="menu__list-link">
               <a class="menu__icon-github" target="_blank" href="https://github.com/ospas312/" title="GitHub"><img src="<%=require('./images/github.svg').default%>" alt="GitHub"></a>
@@ -190,6 +202,7 @@
           </ul>
         </nav>
     </footer>
+  </div>  
   <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
 </html>
