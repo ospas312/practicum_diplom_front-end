@@ -9,10 +9,10 @@
   cursor: pointer;
 }
 
-.button:focus {
+/*.button:focus {
   outline-color: greenyellow;
 }
-
+*/
 .button:disabled {
   background-color: #E6E8EB;
   color: #B6BCBF;

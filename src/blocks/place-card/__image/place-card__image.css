@@ -13,8 +13,14 @@
   padding: 24px;
   box-sizing: border-box;
   align-items: flex-start;
+
+  justify-content: flex-end;
+}
+
+.place-card__image-articles{
   justify-content: space-between;
 }
+
 @media screen and (max-width: 768px) {
   .place-card__image{
     padding: 8px;

@@ -1,7 +1,7 @@
 .place-card__description {
   display: flex;
   min-height: 249px;
-  max-height: 304px;
+  /*max-height: 340px;*/
   flex-direction: column;
   box-sizing: border-box;
   padding: 20px 24px 24px;

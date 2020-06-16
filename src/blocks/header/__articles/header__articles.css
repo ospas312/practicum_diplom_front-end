@@ -6,3 +6,6 @@
 .header__articles *{
     color: #1A1B22;
 }
+ .header__articles > .mobile-menu{
+    background-image: url(../../../images/menub.svg);
+}

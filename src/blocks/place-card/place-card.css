@@ -8,6 +8,7 @@
 @import url(./__title/place-card__title.css);
 @import url(./__source/place-card__source.css);
 @import url(./__subtitle/place-card__subtitle.css);
+@import url(./__articles/place-card__articles.css);
 
 .place-card {
   /*width: 400px;*/

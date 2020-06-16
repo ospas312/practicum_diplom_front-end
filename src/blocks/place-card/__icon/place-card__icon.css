@@ -9,8 +9,12 @@
     background-repeat: no-repeat;
     border: none;
     border-radius: 8px;
-    padding: 10px 13px;    
+    padding: 10px 13px;
+    cursor: pointer;    
 }
 .place-card__icon:hover{
-    background-image: url(../../../images/Rectangle.svg);
+    background-image: url(../../../images/Rectangle.svg);  
+}
+.place-card__icon:focus{
+    background-image: url(../../../images/bookmark.svg);  
 }

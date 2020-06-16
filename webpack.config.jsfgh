@@ -29,7 +29,7 @@ module.exports = {
                             loader: "babel-loader"
                         }
                 },
-              /* {
+               /*{
                     test: /\.(png|jpe?g|gif|ico|svg)$/,
                     use: [
                         {
@@ -52,22 +52,16 @@ module.exports = {
                     options: { publicPath: '/'},
                 }, */
                 {
-                    test: /\.(png|jpe?g|gif|ico|svg)$/,
+                    test: /\.(png|jpg|gif|ico|svg)$/,
                     use: [
-                      {
-                        loader: 'file-loader',
-                        options: {
-                          name: 'images/[name].[hash].[ext]',
-                        }
-                      },
-                      {
-                        loader: 'image-webpack-loader',
-                        options: {}
-                      },
+                        'file-loader?name=./images/[name].[ext]', // указали папку, куда складывать изображения
+                        {
+                            loader: 'image-webpack-loader',
+                        },
                     ]
-                  },
+                },
 
-                {
+               {
                     test: /\.css$/i,
                     use: 
                         [
@@ -79,7 +73,6 @@ module.exports = {
                             'postcss-loader'
                         ]
                 },
-
                 {
                     test: /\.(eot|ttf|woff|woff2)$/,
                     loader: 'file-loader?name=./vendor/[name].[ext]'
@@ -108,7 +101,7 @@ module.exports = {
                 inject: false,
                 hash: true,
                 template: './src/pages/articles.html',
-                filename: 'articles/index.html',
+                filename: 'articles.html',
                 chunks: ['articles'],
             }),
             new WebpackMd5Hash(),

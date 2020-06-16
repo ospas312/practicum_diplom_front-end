@@ -1,0 +1,11 @@
+.place-card__icon-del {
+    background-image: url(../../../images/trash8.svg);
+}
+
+.place-card__icon-del:hover {
+    background-image: url(../../../images/trash.svg);
+}
+
+.place-card__icons::before .place-card__icon-del {
+    content: "";
+}

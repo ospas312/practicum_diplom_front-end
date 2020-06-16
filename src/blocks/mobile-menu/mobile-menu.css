@@ -5,12 +5,12 @@
     width: 24px;
     height: 24px;
 }
-@media screen and (min-width: 581px) {
+@media screen and (min-width: 621px) {
     .mobile-menu{
         display: none;
     }
 }
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 620px) {
     .mobile-menu{
         display: flex;
     }

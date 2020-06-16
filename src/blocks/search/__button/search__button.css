@@ -14,7 +14,15 @@
     box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
     border-radius: 100px;
     display: inline-block;
+    outline: none;
 }
+.search__button:hover{
+    background: #347EFF;
+}
+.search__button:focus{
+    background: #2A65CC;;
+}
+
 @media screen and (max-width: 768px) {
     .search__button{
         height: 56px;

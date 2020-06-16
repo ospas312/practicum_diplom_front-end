@@ -6,22 +6,35 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>NewExplorer</title>
   <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.articles.css %>">
-  <link rel="icon" href="<%=require('../images/N.svg').default%>">
+  <link rel="icon" href="<%=htmlWebpackPlugin.files.publicPath%><%=require('../images/N.svg').default%>">
 </head>
 <body>
   <div class="root">
     <header class="header root__section header__articles">
       <h3 class="logo">NewExplorer</h3>
-      <nav class="menu">
+      <nav class="menu mobile-menu">
+        <ul class="menu__list mobile-menu__list">
+          <li class="menu__list-link mobile-menu__list-link">
+            <a class="menu__icon-main"  href="../index.html" title="Главная">Главная</a>
+          </li>
+          <li class="menu__list-link mobile-menu__list-link">
+            <a class="menu__icon-articles"  href="./articles/index.html" title="Сохранённые статьи">Сохранённые статьи</a>
+          </li>
+          <li class="menu__list-link mobile-menu__list-link">
+            <button class="button menu__button">Name_auth<img src="<%=htmlWebpackPlugin.files.publicPath%><%=require('../images/exit.svg').default%>" alt="exit"></button>
+          </li>
+        </ul>
+    </nav>
+      <nav class="menu  header__menu">
         <ul class="menu__list">
           <li class="menu__list-link menu__list-black">
-            <a class="menu__icon-main" target="_blank" href="/" title="Главная">Главная</a>
+            <a class="menu__icon-main"  href="../index.html" title="Главная">Главная</a>
           </li>
           <li class="menu__list-link menu__list-black">
-            <a class="menu__icon-articles" target="_blank" href="./articles/" title="Сохранённые статьи">Сохранённые статьи</a>
+            <a class="menu__icon-articles"  href="./articles/index.html" title="Сохранённые статьи">Сохранённые статьи</a>
           </li>
           <li class="menu__list-link menu__list-black">
-            <button class="button menu__button menu__button-black">Грета<img src="<%=require('../images/exitb.svg').default%>" alt="exit"></button>
+            <button class="button menu__button menu__button-black">Грета<img src="<%=htmlWebpackPlugin.files.publicPath%><%=require('../images/exitb.svg').default%>" alt="exit"></button>
           </li>
         </ul>
       </nav>    
@@ -33,12 +46,12 @@
     </section>
     <section class="cards root__section">
       <div class="places-list">
-        <div class="place-card">
-          <div class="place-card__image" style="">
+        <div class="place-card place-card__articles">
+          <div class="place-card__image place-card__image-articles" style="">
             <p class="place-card__image-key place-card__image-key_vision">Природа</p>
-            <div class="place-card__icons">
+            <div class="place-card__icons place-card__icons-del">
               <p class="place-card__icon-text">Войдите, чтобы сохранять статьи</p>
-              <button class="place-card__icon"></button>
+              <button class="place-card__icon place-card__icon-del"></button>
             </div>
           </div>
           <div class="place-card__description">
@@ -49,12 +62,12 @@
             <p class="place-card__source">РИА</p>
           </div>
         </div>
-        <div class="place-card">
-          <div class="place-card__image" style="">
+        <div class="place-card place-card__articles">
+          <div class="place-card__image place-card__image-articles" style="">
             <p class="place-card__image-key place-card__image-key_vision">Природа</p>
-            <div class="place-card__icons">
+            <div class="place-card__icons place-card__icons-del">
               <p class="place-card__icon-text">Войдите, чтобы сохранять статьи</p>
-              <button class="place-card__icon"></button>
+              <button class="place-card__icon place-card__icon-del"></button>
             </div>
           </div>
           <div class="place-card__description">
@@ -65,12 +78,12 @@
             <p class="place-card__source">РИА</p>
           </div>
         </div>
-        <div class="place-card">
-            <div class="place-card__image" style="">
+        <div class="place-card place-card__articles">
+            <div class="place-card__image place-card__image-articles" style="">
               <p class="place-card__image-key place-card__image-key_vision">Природа</p>
-              <div class="place-card__icons">
+              <div class="place-card__icons place-card__icons-del">
                 <p class="place-card__icon-text">Войдите, чтобы сохранять статьи</p>
-                <button class="place-card__icon"></button>
+                <button class="place-card__icon place-card__icon-del"></button>
               </div>
             </div>
             <div class="place-card__description">
@@ -81,12 +94,12 @@
               <p class="place-card__source">РИА</p>
             </div>
           </div>
-        <div class="place-card">
-          <div class="place-card__image" style="">
+        <div class="place-card place-card__articles">
+          <div class="place-card__image place-card__image-articles" style="">
             <p class="place-card__image-key place-card__image-key_vision">Природа</p>
-            <div class="place-card__icons">
+            <div class="place-card__icons place-card__icons-del">
               <p class="place-card__icon-text">Войдите, чтобы сохранять статьи</p>
-              <button class="place-card__icon"></button>
+              <button class="place-card__icon place-card__icon-del"></button>
             </div>
           </div>
           <div class="place-card__description">
@@ -105,16 +118,18 @@
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__list-link">
-              <a class="menu__icon-main" target="_blank" href="/index.html" title="Главная">Главная</a>
+              <a class="menu__icon-main"  href="/index.html" title="Главная">Главная</a>
             </li>
             <li class="menu__list-link">
               <a class="menu__icon-facebook" target="_blank" href="https://praktikum.yandex.ru/" title="Яндекс.Практикум">Яндекс.Практикум</a>
             </li>
             <li class="menu__list-link">
-              <a class="menu__icon-github" target="_blank" href="https://github.com/ospas312/" title="GitHub"><img src="<%=require('../images/github.svg').default%>" alt="GitHub"></a>
+              <a class="menu__icon-github" target="_blank" href="https://github.com/ospas312/" title="GitHub">
+                <img src="<%=htmlWebpackPlugin.files.publicPath%><%=require('../images/github.svg').default%>" alt="GitHub"></a>
             </li>
             <li class="menu__list-link">
-              <a class="menu__icon-facebook" target="_blank" href="https://www.facebook.com/" title="Facebook"><img src="<%=require('../images/facebook.svg').default%>" alt="Facebook"></a>
+              <a class="menu__icon-facebook" target="_blank" href="https://www.facebook.com/" title="Facebook">
+                <img src="<%=htmlWebpackPlugin.files.publicPath%><%=require('../images/facebook.svg').default%>" alt="Facebook"></a>
             </li>
           </ul>
         </nav>

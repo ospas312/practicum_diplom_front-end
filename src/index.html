@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>NewExplorer</title>
   <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.main.css %>">
-  <link rel="icon" href="<%=require('./images/N.svg').default%>">
+  <link rel="icon" href="<%=htmlWebpackPlugin.files.publicPath%><%=require('./images/N.svg').default%>">
 </head>
 <body>
   <div class="root">
@@ -15,26 +15,26 @@
       <nav class="menu mobile-menu">
           <ul class="menu__list mobile-menu__list">
             <li class="menu__list-link mobile-menu__list-link">
-              <a class="menu__icon-main" target="_blank" href="/" title="Главная">Главная</a>
+              <a class="menu__icon-main"  href="./index.html" title="Главная">Главная</a>
             </li>
             <li class="menu__list-link mobile-menu__list-link">
-              <a class="menu__icon-articles" target="_blank" href="./articles/" title="Сохранённые статьи">Сохранённые статьи</a>
+              <a class="menu__icon-articles"  href="./articles/index.html" title="Сохранённые статьи">Сохранённые статьи</a>
             </li>
             <li class="menu__list-link mobile-menu__list-link">
-              <button class="button menu__button">Name_auth<img src="<%=require('./images/exit.svg').default%>" alt="exit"></button>
+              <button class="button menu__button">Name_auth<img src="<%=htmlWebpackPlugin.files.publicPath%><%=require('./images/exit.svg').default%>" alt="exit"></button>
             </li>
           </ul>
       </nav>
       <nav class="menu header__menu">
         <ul class="menu__list">
           <li class="menu__list-link">
-            <a class="menu__icon-main" target="_blank" href="/" title="Главная">Главная</a>
+            <a class="menu__icon-main"  href="./index.html" title="Главная">Главная</a>
           </li>
           <li class="menu__list-link">
-            <a class="menu__icon-articles" target="_blank" href="./articles/" title="Сохранённые статьи">Сохранённые статьи</a>
+            <a class="menu__icon-articles"  href="./articles/index.html" title="Сохранённые статьи">Сохранённые статьи</a>
           </li>
           <li class="menu__list-link">
-            <button class="button menu__button">Name_auth<img src="<%=require('./images/exit.svg').default%>" alt="exit"></button>
+            <button class="button menu__button">Name_auth<img src="<%=htmlWebpackPlugin.files.publicPath%><%=require('./images/exit.svg').default%>" alt="exit"></button>
           </li>
         </ul>
       </nav>    
@@ -56,7 +56,7 @@
       </div>
     </section>
     <section class="not-found not-found__vision root__section">
-      <img src="<%=require('./images/not-found.svg').default%>" alt="Not-found" class="not-found__image">
+      <img src="<%=htmlWebpackPlugin.files.publicPath%><%=require('./images/not-found.svg').default%>" alt="Not-found" class="not-found__image">
       <h3 class="title not-found__title">Ничего не найдено</h3>
       <p class="subtitle not-found__subtitle">К сожалению по вашему запросу ничего не найдено.</p>
     </section>
@@ -67,7 +67,7 @@
 
         <div class="place-card">
           <div class="place-card__image" style="">
-            <p class="place-card__image-key place-card__image-key_vision">Природа</p>
+            <!--<p class="place-card__image-key place-card__image-key_vision">Природа</p>-->
             <div class="place-card__icons">
               <p class="place-card__icon-text">Войдите, чтобы сохранять статьи</p>
               <button class="place-card__icon"></button>
@@ -85,7 +85,7 @@
         
         <div class="place-card">
           <div class="place-card__image" style="">
-            <p class="place-card__image-key place-card__image-key_vision">Природа</p>
+            <!--<p class="place-card__image-key place-card__image-key_vision">Природа</p>-->
             <div class="place-card__icons">
               <p class="place-card__icon-text">Войдите, чтобы сохранять статьи</p>
               <button class="place-card__icon"></button>
@@ -103,7 +103,7 @@
 
         <div class="place-card">
           <div class="place-card__image" style="">
-            <p class="place-card__image-key place-card__image-key_vision">Природа</p>
+            <!--<p class="place-card__image-key place-card__image-key_vision">Природа</p>-->
             <div class="place-card__icons">
               <p class="place-card__icon-text">Войдите, чтобы сохранять статьи</p>
               <button class="place-card__icon"></button>
@@ -125,7 +125,7 @@
     </section>
     <section class="about root__section">
       
-        <img class="about__foto" src="<%=require('./images/avatar.png').default%>" alt="Foto">
+        <img class="about__foto" src="<%=htmlWebpackPlugin.files.publicPath%><%=require('./images/avatar.png').default%>" alt="Foto">
       
       <div class="about__text">
         <h3 class="about__text-title">Об авторе</h3>
@@ -137,7 +137,7 @@
 
     <div class="popup popup__signin "> <!--class="popup_is-opened"-->
       <div class="popup__content">
-        <img src="<%=require('./images/close.svg').default%>" alt="Закрыть" class="popup__close popup__close-signin">
+        <img src="<%=htmlWebpackPlugin.files.publicPath%><%=require('./images/close.svg').default%>" alt="Закрыть" class="popup__close popup__close-signin">
         <h3 class="popup__title">Вход</h3>
         <form class="popup__form popup__form-signin" name="signin">
           <p class="popup__form-subtitle">Email</p>  
@@ -155,7 +155,7 @@
 
     <div class="popup popup__signup"> <!--class="popup_is-opened"-->
       <div class="popup__content">
-        <img src="<%=require('./images/close.svg').default%>" alt="Закрыть" class="popup__close popup__close-signup">
+        <img src="<%=htmlWebpackPlugin.files.publicPath%><%=require('./images/close.svg').default%>" alt="Закрыть" class="popup__close popup__close-signup">
         <h3 class="popup__title">Регистрация</h3>
         <form class="popup__form popup__form-signup" name="signup">
           <p class="popup__form-subtitle">Email</p>  
@@ -176,7 +176,7 @@
 
     <div class="popup popup__signup"> <!--class="popup_is-opened"-->
       <div class="popup__content">
-        <img src="<%=require('./images/close.svg').default%>" alt="Закрыть" class="popup__close popup__close-signup">
+        <img src="<%=htmlWebpackPlugin.files.publicPath%><%=require('./images/close.svg').default%>" alt="Закрыть" class="popup__close popup__close-signup">
         <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
         <p class="popup__text"><button class="button popup__button popup__button-text">Выполнить вход</button></p>
       </div>
@@ -188,16 +188,18 @@
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__list-link">
-              <a class="menu__icon-main" target="_blank" href="/" title="Главная">Главная</a>
+              <a class="menu__icon-main"  href="/" title="Главная">Главная</a>
             </li>
             <li class="menu__list-link">
               <a class="menu__icon-facebook" target="_blank" href="https://praktikum.yandex.ru/" title="Яндекс.Практикум">Яндекс.Практикум</a>
             </li>
             <li class="menu__list-link">
-              <a class="menu__icon-github" target="_blank" href="https://github.com/ospas312/" title="GitHub"><img src="<%=require('./images/github.svg').default%>" alt="GitHub"></a>
+              <a class="menu__icon-github" target="_blank" href="https://github.com/ospas312/" title="GitHub">
+                <img src="<%=htmlWebpackPlugin.files.publicPath%><%=require('./images/github.svg').default%>" alt="GitHub"></a>
             </li>
             <li class="menu__list-link">
-              <a class="menu__icon-facebook" target="_blank" href="https://www.facebook.com/" title="Facebook"><img src="<%=require('./images/facebook.svg').default%>" alt="Facebook"></a>
+              <a class="menu__icon-facebook" target="_blank" href="https://www.facebook.com/" title="Facebook">
+                <img src="<%=htmlWebpackPlugin.files.publicPath%><%=require('./images/facebook.svg').default%>" alt="Facebook"></a>
             </li>
           </ul>
         </nav>

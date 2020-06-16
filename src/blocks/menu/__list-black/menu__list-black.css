@@ -6,8 +6,23 @@
     border-bottom: 2px solid #1A1B22;
     line-height: 4.9;
 }
+@media screen and (max-width: 850px) {
+    .menu__list-black:nth-child(2) {
+        width: 110px;
+        line-height: 2.4;
+    }    
+}
+
+
 @media screen and (max-width: 768px) {
     .menu__list-black:nth-child(2) {
         line-height: 3.9;
+        width: auto;
+    }
+}
+@media screen and (max-width: 740px) {
+    .menu__list-black:nth-child(2) {
+        width: 110px;
+        line-height: 1.9;
     }
 }

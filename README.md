@@ -1,7 +1,5 @@
 # practicum_diplom_front-end
 
-
-
 # Дипломный проект, фронтенд верстка.
 
 *practicum_diplom_front-end_webpack*

@@ -11,12 +11,16 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
-    color: #B6BCBF;
+    color: #1A1B22;
     padding-left: 24px;    
     outline: none;
     height: 60px;
     position: absolute;
 }
+
+.search__input::-moz-placeholder { color: #B6BCBF; }
+.search__input::-webkit-input-placeholder { color: #B6BCBF; }
+
 @media screen and (max-width: 768px) {
     .search__input{
         height: 56px;
