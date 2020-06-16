@@ -1,0 +1,16 @@
+.place-card__icon{
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    background: #FFFFFF;
+    background-image: url(../../../images/Rectangle8.svg);
+    /*background-size: cover;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 13px;    
+}
+.place-card__icon:hover{
+    background-image: url(../../../images/Rectangle.svg);
+}

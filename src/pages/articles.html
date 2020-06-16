@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NewExplorer</title>
+  <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.articles.css %>">
+  <link rel="icon" href="<%=htmlWebpackPlugin.files.publicPath%><%=require('../images/N.svg').default%>">
+</head>
+<body>
+  <div class="root">
+    <header class="header root__section header__articles">
+      <h3 class="logo">NewExplorer</h3>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__list-link menu__list-black">
+            <a class="menu__icon-main"  href="../" title="Главная">Главная</a>
+          </li>
+          <li class="menu__list-link menu__list-black">
+            <a class="menu__icon-articles"  href="./articles/" title="Сохранённые статьи">Сохранённые статьи</a>
+          </li>
+          <li class="menu__list-link menu__list-black">
+            <button class="button menu__button menu__button-black">Грета<img src="<%=htmlWebpackPlugin.files.publicPath%><%=require('../images/exitb.svg').default%>" alt="exit"></button>
+          </li>
+        </ul>
+      </nav>    
+    </header>
+    <section class="history root__section">
+        <p class="history__subtitle">Сохранённые статьи</p>
+        <h3 class="history__title">Грета, у вас 4 сохранённых статей</h3>
+        <p class="history__text">По ключевым словам: <span class="history__text-bold">Природа </span>и <span class="history__text-bold">2 Другим</span></p>
+    </section>
+    <section class="cards root__section">
+      <div class="places-list">
+        <div class="place-card">
+          <div class="place-card__image" style="">
+            <p class="place-card__image-key place-card__image-key_vision">Природа</p>
+            <div class="place-card__icons">
+              <p class="place-card__icon-text">Войдите, чтобы сохранять статьи</p>
+              <button class="place-card__icon"></button>
+            </div>
+          </div>
+          <div class="place-card__description">
+            <p class="place-card__date">2 августа, 2019</p>
+            <h3 class="title place-card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
+            <p class="subtitle place-card__subtitle">Знаменитый фотограф снимает первозданные леса России, 
+              чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
+            <p class="place-card__source">РИА</p>
+          </div>
+        </div>
+        <div class="place-card">
+          <div class="place-card__image" style="">
+            <p class="place-card__image-key place-card__image-key_vision">Природа</p>
+            <div class="place-card__icons">
+              <p class="place-card__icon-text">Войдите, чтобы сохранять статьи</p>
+              <button class="place-card__icon"></button>
+            </div>
+          </div>
+          <div class="place-card__description">
+            <p class="place-card__date">2 августа, 2019</p>
+            <h3 class="title place-card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
+            <p class="subtitle place-card__subtitle">Знаменитый фотограф снимает первозданные леса России, 
+              чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
+            <p class="place-card__source">РИА</p>
+          </div>
+        </div>
+        <div class="place-card">
+            <div class="place-card__image" style="">
+              <p class="place-card__image-key place-card__image-key_vision">Природа</p>
+              <div class="place-card__icons">
+                <p class="place-card__icon-text">Войдите, чтобы сохранять статьи</p>
+                <button class="place-card__icon"></button>
+              </div>
+            </div>
+            <div class="place-card__description">
+              <p class="place-card__date">2 августа, 2019</p>
+              <h3 class="title place-card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
+              <p class="subtitle place-card__subtitle">Знаменитый фотограф снимает первозданные леса России, 
+                чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
+              <p class="place-card__source">РИА</p>
+            </div>
+          </div>
+        <div class="place-card">
+          <div class="place-card__image" style="">
+            <p class="place-card__image-key place-card__image-key_vision">Природа</p>
+            <div class="place-card__icons">
+              <p class="place-card__icon-text">Войдите, чтобы сохранять статьи</p>
+              <button class="place-card__icon"></button>
+            </div>
+          </div>
+          <div class="place-card__description">
+            <p class="place-card__date">2 августа, 2019</p>
+            <h3 class="title place-card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
+            <p class="subtitle place-card__subtitle">Знаменитый фотограф снимает первозданные леса России, 
+              чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
+            <p class="place-card__source">РИА</p>
+          </div>
+        </div>
+      </div>
+      <!--<button class="button cards__button">Показать еще</button> пригодится если карточек будет больше -->
+    </section>
+    <footer class="footer root__section">
+      <p class="footer__subtitle">&#169; 2020 Supersite, Powered by News API</p>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-link">
+              <a class="menu__icon-main"  href="/index.html" title="Главная">Главная</a>
+            </li>
+            <li class="menu__list-link">
+              <a class="menu__icon-facebook" target="_blank" href="https://praktikum.yandex.ru/" title="Яндекс.Практикум">Яндекс.Практикум</a>
+            </li>
+            <li class="menu__list-link">
+              <a class="menu__icon-github" target="_blank" href="https://github.com/ospas312/" title="GitHub">
+                <img src="<%=htmlWebpackPlugin.files.publicPath%><%=require('../images/github.svg').default%>" alt="GitHub"></a>
+            </li>
+            <li class="menu__list-link">
+              <a class="menu__icon-facebook" target="_blank" href="https://www.facebook.com/" title="Facebook">
+                <img src="<%=htmlWebpackPlugin.files.publicPath%><%=require('../images/facebook.svg').default%>" alt="Facebook"></a>
+            </li>
+          </ul>
+        </nav>
+    </footer>
+  </div>  
+  <script src="<%= htmlWebpackPlugin.files.chunks.articles.entry %>"></script>
+</body>
+</html>

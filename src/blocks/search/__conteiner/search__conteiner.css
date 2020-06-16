@@ -1,0 +1,16 @@
+.search__conteiner{
+    margin: 80px auto;
+    width: 608px;
+}
+@media screen and (max-width: 768px) {
+    .search__conteiner{
+        margin: 38px auto 48px;
+        width: 448px;
+    }
+}
+@media screen and (max-width: 460px) {
+    .search__conteiner {
+        margin: 30px 16px 32px;
+        width: 100%; 
+    }
+}

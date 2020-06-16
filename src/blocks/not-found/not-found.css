@@ -1,0 +1,18 @@
+@import url(./__subtitle/not-found__subtitle.css);
+@import url(./__title/not-found__title.css);
+
+.not-found{
+    background: #F5F6F7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 768px) {
+    .not-found{
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+}

@@ -1,0 +1,14 @@
+.place-card__description {
+  display: flex;
+  min-height: 249px;
+  max-height: 304px;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px 24px 24px;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .place-card__description {
+    padding: 16px;
+  }
+}

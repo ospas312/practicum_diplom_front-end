@@ -1,0 +1,38 @@
+.places-list {
+  display: grid;
+  /*grid-template-columns: repeat(auto-fill, 400px);*/
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px 16px;
+  justify-content: center;
+  margin-top: 64px;
+}
+
+@media screen and (max-width: 900px) {
+  .places-list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 8px 8px;
+    margin-top: 42px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .places-list {
+    /*grid-template-columns: repeat(auto-fill, 224px);*/
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 8px 8px;
+    margin-top: 32px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .places-list {
+    /*grid-template-columns: repeat(auto-fill, 224px);*/
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 8px 8px;
+    margin-top: 32px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .places-list{
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px 10px;
+  }
+}

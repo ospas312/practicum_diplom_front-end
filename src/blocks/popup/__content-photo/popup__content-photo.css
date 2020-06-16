@@ -1,0 +1,10 @@
+.popup__content-photo {
+    max-width: 80vw;
+    max-height: 80vh;
+    width: unset;
+    background-color: unset;
+    border-radius: 0;
+    position: relative;
+    box-sizing: border-box;
+    padding: 5px;
+  }

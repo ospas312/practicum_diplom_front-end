@@ -1,0 +1,16 @@
+.root__section {
+  max-width: 1440px;
+  width: calc(100%);
+  margin: auto;
+}
+
+@media screen and (max-width: 980px) {
+  .root__section {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .root__section {
+    width: 100%;
+  }
+}

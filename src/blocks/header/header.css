@@ -1,0 +1,21 @@
+@import url(./__menu/header__menu.css);
+
+.header {
+  max-height: 80px;
+  display: flex;
+  align-items: center;
+  /*background: rgba(196, 196, 196, 0.01);*/
+  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
+  justify-content: space-between;
+  padding: 0 104px;
+  box-sizing: border-box;
+  background: url(../../images/georgia-de-lotz-unsplash.png);
+  background-position-x: center;
+  color: #FFF;
+}
+@media screen and (max-width: 768px) {
+  .header {
+    max-height: 66px;
+    padding: 0 40px;
+  }
+}

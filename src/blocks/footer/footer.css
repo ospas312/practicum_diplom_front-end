@@ -1,0 +1,38 @@
+@import url(./__subtitle/footer__subtitle.css);
+
+.footer{
+    height: 80px;
+    padding-left: 104px;
+    padding-right: 104px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer *{
+    color: #1A1B22; 
+}
+
+@media screen and (max-width: 768px) {
+    .footer{
+        height: 64px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+  }
+@media screen and (max-width: 580px) {
+    .footer{
+        height: 176px;
+        padding-left: 16px;
+        padding-right: 16px;
+        flex-direction: column-reverse;
+    }
+}
+@media screen and (max-width: 400px) {
+    .footer{
+        height: 176px;
+        padding-left: 16px;
+        padding-right: 16px;
+        flex-direction: column-reverse;
+    }
+}
