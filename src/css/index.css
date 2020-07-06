@@ -19,6 +19,7 @@
 @import url(../blocks/about/about.css);
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/mobile-menu/mobile-menu.css);
+@import url(../blocks/section/section.css);
 body {
   background-color: #FFF;
 }

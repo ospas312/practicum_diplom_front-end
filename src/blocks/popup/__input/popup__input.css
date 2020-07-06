@@ -12,7 +12,10 @@
   font-size: 14px;
   line-height: 17px;
   color: #000000;
-  opacity: 0.2;
+  /*opacity: 0.2;*/
+}
+.popup__input::placeholder{
+  opacity: 0.5;
 }
 
 .popup__input:last-of-type {

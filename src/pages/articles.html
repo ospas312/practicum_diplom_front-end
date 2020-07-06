@@ -42,76 +42,33 @@
     <section class="history root__section">
         <p class="history__subtitle">Сохранённые статьи</p>
         <h3 class="history__title">Грета, у вас 4 сохранённых статей</h3>
-        <p class="history__text">По ключевым словам: <span class="history__text-bold">Природа </span>и <span class="history__text-bold">2 Другим</span></p>
+        <p class="history__text">По ключевым словам: <span class="history__text-bold">Природа </span></p>
+        <!--<p class="history__text">По ключевым словам: <span class="history__text-bold">Природа </span>и <span class="history__text-bold">2 Другим</span></p>-->
     </section>
     <section class="cards root__section">
-      <div class="places-list">
-        <div class="place-card place-card__articles">
-          <div class="place-card__image place-card__image-articles" style="">
+      <template id="tmpl">  
+        <div class="place-card">
+          <div class="place-card__image" style="">
             <p class="place-card__image-key place-card__image-key_vision">Природа</p>
             <div class="place-card__icons place-card__icons-del">
               <p class="place-card__icon-text">Войдите, чтобы сохранять статьи</p>
-              <button class="place-card__icon place-card__icon-del"></button>
+              <button type="" class="place-card__icon place-card__icon-del"></button>
             </div>
           </div>
-          <div class="place-card__description">
-            <p class="place-card__date">2 августа, 2019</p>
-            <h3 class="title place-card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-            <p class="subtitle place-card__subtitle">Знаменитый фотограф снимает первозданные леса России, 
-              чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
-            <p class="place-card__source">РИА</p>
-          </div>
-        </div>
-        <div class="place-card place-card__articles">
-          <div class="place-card__image place-card__image-articles" style="">
-            <p class="place-card__image-key place-card__image-key_vision">Природа</p>
-            <div class="place-card__icons place-card__icons-del">
-              <p class="place-card__icon-text">Войдите, чтобы сохранять статьи</p>
-              <button class="place-card__icon place-card__icon-del"></button>
-            </div>
-          </div>
-          <div class="place-card__description">
-            <p class="place-card__date">2 августа, 2019</p>
-            <h3 class="title place-card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-            <p class="subtitle place-card__subtitle">Знаменитый фотограф снимает первозданные леса России, 
-              чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
-            <p class="place-card__source">РИА</p>
-          </div>
-        </div>
-        <div class="place-card place-card__articles">
-            <div class="place-card__image place-card__image-articles" style="">
-              <p class="place-card__image-key place-card__image-key_vision">Природа</p>
-              <div class="place-card__icons place-card__icons-del">
-                <p class="place-card__icon-text">Войдите, чтобы сохранять статьи</p>
-                <button class="place-card__icon place-card__icon-del"></button>
-              </div>
-            </div>
+          <a class="place-card__link" target="_blank" href="" title="Перейти">
             <div class="place-card__description">
               <p class="place-card__date">2 августа, 2019</p>
               <h3 class="title place-card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
               <p class="subtitle place-card__subtitle">Знаменитый фотограф снимает первозданные леса России, 
-                чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
+              чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
               <p class="place-card__source">РИА</p>
             </div>
-          </div>
-        <div class="place-card place-card__articles">
-          <div class="place-card__image place-card__image-articles" style="">
-            <p class="place-card__image-key place-card__image-key_vision">Природа</p>
-            <div class="place-card__icons place-card__icons-del">
-              <p class="place-card__icon-text">Войдите, чтобы сохранять статьи</p>
-              <button class="place-card__icon place-card__icon-del"></button>
-            </div>
-          </div>
-          <div class="place-card__description">
-            <p class="place-card__date">2 августа, 2019</p>
-            <h3 class="title place-card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-            <p class="subtitle place-card__subtitle">Знаменитый фотограф снимает первозданные леса России, 
-              чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
-            <p class="place-card__source">РИА</p>
-          </div>
+          </a>
         </div>
-      </div>
-      <!--<button class="button cards__button">Показать еще</button> пригодится если карточек будет больше -->
+      </template>
+      <div class="places-list">
+      </div>   
+      <!--<button type="button" class="button cards__button">Показать еще</button>--> 
     </section>
     <footer class="footer root__section">
       <p class="footer__subtitle">&#169; 2020 Supersite, Powered by News API</p>

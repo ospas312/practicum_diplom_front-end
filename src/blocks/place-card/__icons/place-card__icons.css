@@ -3,7 +3,7 @@
 
 }
 
-.place-card__icons:hover::before{
+/*.place-card__icons:hover::before{
     content: "Войдите, чтобы сохранить статьи";
     height: 40px;
     font-family: Roboto;
@@ -20,7 +20,7 @@
     margin: 0;
     padding-left: 10px;
     padding-right: 10px;
-}
+}*/
 .place-card__icons-del:hover::before{
     content:none;
 

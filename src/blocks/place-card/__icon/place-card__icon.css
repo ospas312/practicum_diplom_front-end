@@ -15,6 +15,9 @@
 .place-card__icon:hover{
     background-image: url(../../../images/Rectangle.svg);  
 }
-.place-card__icon:focus{
+.place-card__icon-focus{
     background-image: url(../../../images/bookmark.svg);  
+}
+.place-card__icon-del{
+    background-image: url(../../../images/trash.svg);
 }
