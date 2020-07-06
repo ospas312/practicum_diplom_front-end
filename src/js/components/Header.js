@@ -15,8 +15,8 @@ export default class Header {
                 this.buttons.forEach((elem) => elem.firstChild.textContent = `${this.isLogged.userName}`); 
             })
             .catch((err) => {
-                //err.text()
-                    //.then(error => console.log(JSON.parse(error).message));
+                err.text()
+                    .then(error => console.log(JSON.parse(error).message));
                 this.isLogged.userName = '';
                 this.isLogged.userAuth = false;
                 this.articles.forEach((elem) => elem.style.display = 'none');

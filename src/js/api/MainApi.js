@@ -6,7 +6,7 @@ export default class MainApi {
       this.headers = headers;
     }
     logout(){
-        return fetch(`${this.baseUrl}/logout`, {
+        return fetch(`${this.baseUrl}logout`, {
             method: 'DELETE',
             credentials: 'include',
             headers: this.headers,
@@ -19,7 +19,7 @@ export default class MainApi {
         });
     }
     signup(email, password, name){
-        return fetch(`${this.baseUrl}/signup`, {
+        return fetch(`${this.baseUrl}signup`, {
             method: 'POST',
             credentials: 'include',
             headers: {
@@ -39,7 +39,7 @@ export default class MainApi {
         });
     }
     signin(email, password){
-        return fetch(`${this.baseUrl}/signin`, {
+        return fetch(`${this.baseUrl}signin`, {
             method: 'POST',
             credentials: 'include',
             headers: this.headers,
@@ -56,7 +56,7 @@ export default class MainApi {
         });
     }
     getUserData(){
-        return fetch(`${this.baseUrl}/users/me`, {
+        return fetch(`${this.baseUrl}users/me`, {
             method: 'GET',
             credentials: 'include',
             headers: this.headers,
@@ -69,7 +69,7 @@ export default class MainApi {
         });
     }
     getArticles(){
-        return fetch(`${this.baseUrl}/articles`, {
+        return fetch(`${this.baseUrl}articles`, {
             method: 'GET',
             credentials: 'include',
             headers: this.headers,
@@ -82,7 +82,7 @@ export default class MainApi {
         });
     }
     createArticle(keyword, title, text, date, source, link, image){
-        return fetch(`${this.baseUrl}/articles`, {
+        return fetch(`${this.baseUrl}articles`, {
             method: 'POST',
             credentials: 'include',
             headers: this.headers,
@@ -104,7 +104,7 @@ export default class MainApi {
         });
     }
     removeArticle(id){
-        return fetch(`${this.baseUrl}/articles/${id}`, {
+        return fetch(`${this.baseUrl}articles/${id}`, {
             method: 'DELETE',
             credentials: 'include',
             headers: this.headers,

@@ -25,7 +25,7 @@ const articles = document.querySelectorAll('.menu__icon-articles');
 const buttons = document.querySelectorAll('.menu__button');
 
 const mainApi = new MainApi({
-  baseUrl: 'https://api.perpetuum.space',
+  baseUrl: 'https://api.perpetuum.space/',
   headers: {
     'Content-Type': 'application/json',
   }
