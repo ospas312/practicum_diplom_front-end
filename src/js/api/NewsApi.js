@@ -10,7 +10,7 @@ export default class NewsApi {
       this.toDay = this.toDay.toISOString();
     }
     getNews(query){
-      return fetch(`http://newsapi.org/v2/everything?q=${query}&from=${this.sevenDay}&from=${this.toDay}&pageSize=100&apiKey=${this.key}`, {
+      return fetch(`https://praktikum.tk/news/v2/everything?q=${query}&from=${this.sevenDay}&from=${this.toDay}&pageSize=100&apiKey=${this.key}`, {
       })
       .then(res => {
         if (res.ok) {

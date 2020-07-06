@@ -25,7 +25,7 @@ const articles = document.querySelectorAll('.menu__icon-articles');
 const buttons = document.querySelectorAll('.menu__button');
 
 const mainApi = new MainApi({
-  baseUrl: 'http://localhost:3000',
+  baseUrl: 'https://api.perpetuum.space',
   headers: {
     'Content-Type': 'application/json',
   }
@@ -84,11 +84,11 @@ formNew.addEventListener('submit', (event) => {
   mainApi.signup(email, password, name)
     .then((res) =>{
       console.log('formNew',res);
-      if (res.ok) {
+      //if (res.ok) {
         popup.close(event);
         popupLogin.classList.add('popup_is-opened');
-      }
-      return Promise.reject(res);
+      //}
+      //return Promise.reject(res);
   })
   .catch((err) => {
     err.text()
@@ -105,6 +105,7 @@ formSignin.addEventListener('submit', (event) => {
   const password = (event.target.password.value);
   mainApi.signin(email, password)
     .then((res) =>{
+      console.log(res);
       header.render();
       popup.close(event);
     })

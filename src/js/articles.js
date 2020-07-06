@@ -13,7 +13,7 @@ import {
 
 
 const mainApi = new MainApi({
-    baseUrl: 'http://localhost:3000',
+    baseUrl: 'https://api.perpetuum.space',
     headers: {
       'Content-Type': 'application/json',
     }
