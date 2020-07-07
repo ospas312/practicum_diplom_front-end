@@ -15,12 +15,13 @@ const apiKey = '0455a0ba8794482a80f58b4757c2ee79';
 
 const articles = document.querySelectorAll('.menu__icon-articles');
 const buttons = document.querySelectorAll('.menu__button');
-
+const ARR = '';
 
 export {
     ERROR_MESSAGES,
     isLogged,
     apiKey,
     articles,
-    buttons
+    buttons,
+    ARR
 }

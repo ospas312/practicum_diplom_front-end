@@ -24,7 +24,7 @@ const header = new Header(mainApi, articles, buttons, isLogged);
 
 header.render()
     .catch((err) =>{
-        window.location.href = '/';
+        window.location.href = '../index.html';
     });
 
 
@@ -46,7 +46,7 @@ document.addEventListener('click', (event) => {
     if(event.target.closest('.menu__button')){
         header.renderExit()
             .then((res) => {
-                window.location.href = '/';
+                window.location.href = '../index.html';
             })
             .catch((err) => {
                 err.text()

@@ -1,15 +1,17 @@
 import MainApi from "./api/MainApi.js";
 import Popup from "./components/Popup.js";
-import {UserInfo} from "./UserInfo.js";
 import {FormValidator} from "./FormValidator.js";
-import {serverUrl} from "./config.js";
 import NewsApi from "./api/NewsApi.js";
 import Header from "./components/Header.js";
 import NewsCardList from "./components/NewsCardList.js";
+import getArticles from "./utils/getArticles.js"
 import {
   ERROR_MESSAGES,
   isLogged,
-  apiKey
+  apiKey,
+  articles,
+  buttons,
+
 } from './constants/constants.js';
 
 const cardContainer = document.querySelector('.places-list');
@@ -21,8 +23,8 @@ const popupEdit = document.querySelector('.popup__signin');
 const popupSearch = document.querySelector('.search');
 const popupLogin = document.querySelector('.popup__signup-login');
 
-const articles = document.querySelectorAll('.menu__icon-articles');
-const buttons = document.querySelectorAll('.menu__button');
+//const articles = document.querySelectorAll('.menu__icon-articles');
+//const buttons = document.querySelectorAll('.menu__button');
 
 const mainApi = new MainApi({
   baseUrl: 'https://api.perpetuum.space/',
@@ -41,7 +43,7 @@ header.render()
       });
   })
 
-const newsCardList = new NewsCardList(mainApi, isLogged);
+const newsCardList = new NewsCardList(mainApi, isLogged, getArticles);
 const formValidator = new FormValidator(ERROR_MESSAGES);
 const popup = new Popup(formValidator, popupNew, popupEdit,
   formSignin, formNew, popupLogin, header);
@@ -51,12 +53,13 @@ formValidator.setEventListeners(popupSearch);
 formSearch.addEventListener('submit', (event) => {
   event.preventDefault();
   document.querySelector('.preloader').classList.add('section-vision');
+  newsCardList.clearResults();
   const item = (event.target.search.value);
   formValidator.setEventListeners(popupSearch);
-  popup.clearContent(event.target);//resetForm(event.target);
+  //popup.clearContent(event.target);//resetForm(event.target);
   newsApi.getNews(item)
     .then((res) =>{
-      console.log(res);
+      //console.log(res);
       if(res.articles.length != 0){
         document.querySelector('.cards').classList.add('section-vision');
         document.querySelector('.not-found').classList.remove('section-vision');
@@ -122,14 +125,16 @@ cardContainer.addEventListener('click', (event) => {
   if (event.target.closest('.place-card__icons')){
     if (isLogged.userAuth == true){
       event.target.closest('.place-card__icons').firstElementChild.style.display = 'none';
-      newsCardList.addCard(event.target.closest('.place-card'))
-      .then((res) => {
-          event.target.classList.add('place-card__icon-focus');
-      })
-      .catch((err) => {
-        err.text()
-          .then(error => console.log(JSON.parse(error).message));  
-      })
+      if (!event.target.classList.contains('place-card__icon-focus')){
+        newsCardList.addCard(event.target.closest('.place-card'))
+          .then((res) => {
+            event.target.classList.add('place-card__icon-focus');
+          })
+          .catch((err) => {
+            err.text()
+              .then(error => console.log(JSON.parse(error).message));  
+        })
+      }  
     } else{
       event.target.closest('.place-card__icons').firstElementChild.style.display = 'flex';
     }
