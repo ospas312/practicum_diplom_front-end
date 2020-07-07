@@ -1,9 +1,3 @@
-/*Popup. Класс попапа. Вот его методы:
-setContent — вставляет в попап содержимое, например, форму входа или сообщение об успешной регистрации;
-clearContent — очищает содержимое попапа;
-open — открывает попап;
-close — закрывает попап.*/
-
 export default class Popup {
     constructor(validation, popupNew, popupEdit, formSignin, formNew, popupLogin, header) {
       this.validation = validation;
