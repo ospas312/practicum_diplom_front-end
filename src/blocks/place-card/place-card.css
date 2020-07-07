@@ -1,0 +1,32 @@
+@import url(./__image/place-card__image.css);
+@import url(./__description/place-card__description.css);
+@import url(./__image/__image-key/place-card__image-key.css);
+@import url(./__icon/place-card__icon.css);
+@import url(./__icon-text/place-card__icon-text.css);
+@import url(./__icons/place-card__icons.css);
+@import url(./__date/place-card__date.css);
+@import url(./__title/place-card__title.css);
+@import url(./__source/place-card__source.css);
+@import url(./__subtitle/place-card__subtitle.css);
+@import url(./__articles/place-card__articles.css);
+@import url(./__link/place-card__link.css);
+
+.place-card {
+  /*width: 400px;*/
+  background-color: #fff;
+  border-radius: 10px;
+  min-height: 360px;
+}
+@media screen and (max-width: 900px) {
+  .place-card {
+    width: 99%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .place-card {
+   /* width: 224px;*/
+    background-color: #fff;
+    border-radius: 10px;
+    /*min-height: 420px;*/
+  }
+}

@@ -1,0 +1,14 @@
+.place-card__image-key{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin: 0;
+    display: none;
+}

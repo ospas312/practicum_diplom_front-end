@@ -1,0 +1,11 @@
+.header__articles{
+    background: #FFFFFF;
+    color: #1A1B22;
+    box-shadow: inset 0px -1px 0px #D1D2D6;
+}
+.header__articles *{
+    color: #1A1B22;
+}
+ .header__articles > .mobile-menu{
+    background-image: url(../../../images/menub.svg);
+}

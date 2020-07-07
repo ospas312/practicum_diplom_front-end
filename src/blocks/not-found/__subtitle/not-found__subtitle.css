@@ -1,0 +1,25 @@
+.not-found__subtitle{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #B6BCBF;
+    margin: 0;
+    margin-top: 16px;
+    width: 23%;
+}
+@media screen and (max-width: 768px) {
+    .not-found__subtitle{
+        font-size: 16px;
+        line-height: 18px;
+        margin-top: 12px;
+        width: 40%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .not-found__subtitle{
+        width: 80%;
+    }
+}

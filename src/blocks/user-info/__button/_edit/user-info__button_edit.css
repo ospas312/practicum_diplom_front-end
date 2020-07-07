@@ -1,0 +1,22 @@
+.user-info__button_edit{
+    
+    width: 38px;
+    height: 18px;
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 24px;
+    padding: 0;
+}
+
+.user-info__button_edit:hover{
+    background-color: white;
+    color: black;
+}
+
+.user-info__button_edit:active{
+    background-color: royalblue;
+    color: black;
+    /*outline: none;*/
+    border: 1px royalblue solid;
+}
+ 

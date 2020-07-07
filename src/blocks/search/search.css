@@ -1,0 +1,28 @@
+@import url(./__button/search__button.css);
+@import url(./__conteiner/search__conteiner.css);
+@import url(./__form/search__form.css);
+@import url(./__input/search__input.css);
+@import url(./__subtitle/search__subtitle.css);
+@import url(./__title/search__title.css);
+
+.search {
+    background: url(../../images/georgia-de-lotz-unsplash.png);
+    background-position-x: center;
+    background-position-y: -80px;
+    box-sizing: border-box;
+    display: flex;
+}
+@media screen and (max-width: 768px) {
+    .search {
+        background-position-y: -65px;
+    }
+}
+@media screen and (max-width: 460px) {
+    .search {
+        background-position-y: -65px;
+    }
+}
+
+
+
+

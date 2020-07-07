@@ -1,0 +1,21 @@
+.place-card__title{
+    font-family: Robotoslab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+    color: #1A1B22;
+    margin: 0;
+}
+@media screen and (max-width: 1028px) {
+    .place-card__title {
+        font-size: 24px;
+        line-height: 26px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .place-card__title {
+        font-size: 22px;
+        line-height: 24px;
+    }
+}

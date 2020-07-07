@@ -1,0 +1,21 @@
+.cards__button{
+    height: 64px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    border-radius: 80px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1A1B22;
+    padding: 0 84px;  
+    margin-top: 64px;  
+}
+@media screen and (max-width: 768px) {
+    .cards__button{
+        height: 56px;
+        padding: 0 60px; 
+        margin-top: 22px; 
+    }
+}
